@@ -15,7 +15,7 @@ Useful information about MRI image orientation can be found at:
   - https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Orientation%20Explained 
   - http://gru.stanford.edu/doku.php/mrTools/coordinateTransforms
 
-### 2. Anterior Commissure - Posterior Comissure (ACPC) alignment.
+### 2. Anterior Commissure - Posterior Commissure (ACPC) alignment.
 
 The next step is to align the anatomical image to the point where two white matter tracts cross hemispheres: the anterior commissure and posterior commissure (ACPC). The anterior commissure connects the two temporal lobes and is located below the anterior portion of the corpus callosum (i.e. fornix), the large white matter tract connecting the two hemispheres. The posterior commissure is located just behind the cerebral aqueduct, an important connection between the third and fourth ventricles. This step will move the image in a way that effectively "centers" the image. Specifically, the image will be moved so that a horizontal line drawn from the front to the back of the brain will pass through both landmarks, and a horizontal line drawn from the temporal lobes and a vertical line from the top of the brain to the bottom bisect at the midpoint of the two landmarks. A majority of the following processing steps require the anatomical image to be aligned to the ACPC plane, including Freesurfer parcellation. This can be done on brainlife.io using the [HCP ACPC Alignment (T1w)](https://brainlife.io/app/5c61c69f14027a01b14adcb3) app.
 
