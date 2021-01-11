@@ -15,7 +15,7 @@ Useful information about MRI image orientation can be found at:
   - https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Orientation%20Explained 
   - http://gru.stanford.edu/doku.php/mrTools/coordinateTransforms
 
-### 2. Anterior Commissure - Posterior Comissure (ACPC) alignment.
+### 2. Anterior Commissure - Posterior Commissure (ACPC) alignment.
 
 The next step is to align the anatomical image to the point where two white matter tracts cross hemispheres: the anterior commissure and posterior commissure (ACPC). The anterior commissure connects the two temporal lobes and is located below the anterior portion of the corpus callosum (i.e. fornix), the large white matter tract connecting the two hemispheres. The posterior commissure is located just behind the cerebral aqueduct, an important connection between the third and fourth ventricles. This step will move the image in a way that effectively "centers" the image. Specifically, the image will be moved so that a horizontal line drawn from the front to the back of the brain will pass through both landmarks, and a horizontal line drawn from the temporal lobes and a vertical line from the top of the brain to the bottom bisect at the midpoint of the two landmarks. A majority of the following processing steps require the anatomical image to be aligned to the ACPC plane, including Freesurfer parcellation. This can be done on brainlife.io using the [HCP ACPC Alignment (T1w)](https://brainlife.io/app/5c61c69f14027a01b14adcb3) app.
 
@@ -91,14 +91,14 @@ Once you're happy with the alignment, you can move onto Freesurfer parcellation 
     * Click the app card.
 1. On the 'Submit App' page, select the following:
     * For input, select the ACPC aligned anatomical image generated above by clicking the drop-down menu and finding the appropriate datasets.
-    * Select the boxes for 'hippocampal' and 'hires'
+    * Select the boxes for 'hires' and 'hippocampal'
     * For 'version,' select '6.0.0' from the drop-down menu.
     * Select the box for 'Archive all output datasets when finished'
-        * For 'Dataset Tags,' type and enter 'freesurfer'
+    * For 'Dataset Tags,' type and enter 'freesurfer'
     * Hit 'Submit'
 1. Once the app is finished running, view the results by clicking the 'eye' icon to the right of the dataset
     * Choose 'freeview' as your viewer
-        * This will load the following volumes and surfaces: aseg, brainmask, white matter mask, T1, left/right hemisphere pial (cortical), and white (white matter) surfaces.
+    * This will load the following volumes and surfaces: aseg, brainmask, white matter mask, T1, left/right hemisphere pial (cortical), and white (white matter) surfaces.
     * To view the aparc.a2009s segmentation on an inflated surface, do the following:
         * Click File --> Load surface
             * Choose the lh.inflated and rh.inflated surfaces
@@ -118,9 +118,9 @@ Once you're happy with the surfaces, you can move computing statistics!
     * Click the "Freesurfer Statistics" app card.
 1. On the 'Submit App' page, select the following:
     * For input, select the Freesurfer output generated in Step 3 by clicking the drop-down menu and finding the appropriate dataset (look for the datatag 'freesurfer'.
-    * For parcellation, please choose the parcellation of your choice. For this tutorial, we will use the 'aparc.a2009s'. To choose this, select the 'aparc.a2009s' option from the drop-down menu.
+    * For parcellation, please choose the parcellation of your choice. For this tutorial, we will select the 'aparc.a2009s' option from the drop-down menu.
     * Select the box for 'Archive all output datasets when finished
-        * For 'Dataset Tags', type and enter 'freesurfer-stats'
+    * For 'Dataset Tags', type and enter 'freesurfer-stats'
     * Hit 'Submit'
     
 To view the results, download the data by clicking the 'download' button next to the dataset. Then open the 'lh' and 'rh' csv files into your favorite spreadsheet of choice (i.e. excel) and you're ready to start your group analyses!
