@@ -2,6 +2,7 @@
 
 # What is Brainlife?
 
+brainlife.io ia a free cloud platform for secure neuroscience data analysis. 
 brainlife.io promotes engagement and education in reproducible neuroscience by providing an online, community-based platform where users can publish code (Apps) and Data while integrating HPC and cloud-computing resources to run Apps. brainlife.io also allows users to publish all of the research assets associated with their projects that are embedded in our cloud-computing environment and referenced by a single digital-object identifier (DOI). Our platform is unique because of its focus on supporting scientific reproducibility beyond open code and open data -- brainlife.io also provides fundamental smart mechanisms for what we call “Open Services.”
 
 Below, you will learn about the main panel of tools you will encounter as soon as you log into brainlife.io. While these run-through are brief, you’ll learn much more about each feature as you review the rest of brainlife.io’s documentation.
