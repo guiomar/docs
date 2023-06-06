@@ -54,7 +54,7 @@ export PATH=~/abcd-spec/hooks/direct:$PATH
 ```
 
 !!! note
-    IU HPC resource, you can use brlife's shared installation
+    IU HPC resource, you can use brainlife's shared installation
 
     ```
     $ ~/.bashrc
